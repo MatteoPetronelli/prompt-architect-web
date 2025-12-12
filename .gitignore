@@ -1,0 +1,21 @@
+# Dépendances (Le plus important)
+node_modules/
+
+# Build de production
+dist/
+
+# Fichiers d'environnement (Sécurité : contient tes clés API secrètes)
+.env
+.env.*
+
+# Fichiers système Mac/Windows inutiles
+.DS_Store
+Thumbs.db
+
+# Logs npm en cas d'erreur
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dossiers temporaires Astro
+.astro/
