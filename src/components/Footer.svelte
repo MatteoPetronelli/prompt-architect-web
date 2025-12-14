@@ -3,7 +3,7 @@
     
     <div class="text-center md:text-left">
       <h3 class="font-bold text-xl text-white mb-2">Architecte de Prompts</h3>
-      <p class="text-slate-500 text-sm">
+      <p class="text-slate-300 text-sm">
         © 2025 - Créé pour les créateurs exigeants.
       </p>
     </div>
@@ -14,7 +14,7 @@
         href="https://github.com/MatteoPetronelli/Bot_Prompt_Engineering/blob/post_presentation/doc/doc.md" 
         target="_blank" 
         rel="noopener noreferrer" 
-        class="text-slate-400 hover:text-blue-400 transition-colors text-sm"
+        class="text-slate-300 hover:text-blue-400 transition-colors text-sm"
       >
         Documentation
       </a>
@@ -23,7 +23,7 @@
         href="https://github.com/MatteoPetronelli/Bot_Prompt_Engineering/tree/post_presentation" 
         target="_blank" 
         rel="noopener noreferrer" 
-        class="text-slate-400 hover:text-blue-400 transition-colors text-sm"
+        class="text-slate-300 hover:text-blue-400 transition-colors text-sm"
       >
         GitHub
       </a>
