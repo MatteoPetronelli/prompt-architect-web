@@ -1,6 +1,9 @@
 ---
 import Background from '../components/Background.svelte';
 import Hero from '../components/Hero.svelte';
+import Features from '../components/Features.svelte';
+import Steps from '../components/Steps.svelte';
+import Footer from '../components/Footer.svelte';
 import { ClientRouter } from 'astro:transitions';
 ---
 
@@ -9,6 +12,7 @@ import { ClientRouter } from 'astro:transitions';
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/png" href="/icon.png" />
 		<meta name="viewport" content="width=device-width" />
+        <meta name="description" content="Transformez vos idées en prompts structurés avec l'Architecte. Un Bot Discord puissant utilisant la méthode CO-STAR pour générer du contenu IA de qualité." />
 		<title>Architecte de Prompts</title>
         
         <ClientRouter />
@@ -21,10 +25,9 @@ import { ClientRouter } from 'astro:transitions';
 
         <main class="relative z-10">
             <Hero />
-            
-            <section id="features" class="h-screen flex items-center justify-center bg-slate-900/80 backdrop-blur-sm border-t border-slate-800">
-                <h2 class="text-4xl font-bold text-slate-300">La suite du site...</h2>
-            </section>
+            <Features client:visible />
+            <Steps client:visible />
+            <Footer client:visible />
         </main>
 
 	</body>
