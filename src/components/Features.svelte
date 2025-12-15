@@ -25,8 +25,9 @@
   ];
 </script>
 
-<section id="features" class="py-24 relative z-10">
-  <div class="max-w-6xl mx-auto px-6">
+<section id="features" class="py-24 relative z-10 pointer-events-none">
+  
+  <div class="max-w-6xl mx-auto px-6 pointer-events-auto">
     
     <div class="text-center mb-16">
       <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">

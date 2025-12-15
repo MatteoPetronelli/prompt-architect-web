@@ -7,28 +7,49 @@ import Footer from '../components/Footer.svelte';
 import { ClientRouter } from 'astro:transitions';
 ---
 
-<html lang="fr" class="scroll-smooth">
+<html lang="fr" class="bg-slate-900 scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/png" href="/icon.png" />
+		<link rel="apple-touch-icon" href="/icon.png" />
 		<meta name="viewport" content="width=device-width" />
+		
         <meta name="description" content="Transformez vos idées en prompts structurés avec l'Architecte. Un Bot Discord puissant utilisant la méthode CO-STAR pour générer du contenu IA de qualité." />
+        <meta name="theme-color" content="#0f172a" />
+        
 		<title>Architecte de Prompts</title>
+        
+        <style>
+            html { color-scheme: dark; }
+        </style>
         
         <ClientRouter />
 	</head>
-	<body class="bg-slate-900 text-white antialiased">
-		
+	<body class="text-white antialiased selection:bg-cyan-500 selection:text-white">
+
         <div class="fixed inset-0 z-0" transition:persist>
             <Background client:load />
         </div>
 
-        <main class="relative z-10">
-            <Hero />
-            <Features client:visible />
-            <Steps client:visible />
-            <Footer client:visible />
+        <main class="relative z-10 pointer-events-none">
+            
+            <div id="hero">
+                <Hero client:load />
+            </div>
+            
+            <div class="">
+                <Features client:visible />
+            </div>
+            
+            <div id="steps">
+                <Steps client:visible />
+            </div>
+
         </main>
+
+        <div id="footer" class="relative z-10 pointer-events-none">
+            <Footer />
+        </div>
 
 	</body>
 </html>

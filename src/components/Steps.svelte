@@ -10,7 +10,7 @@
       number: "02",
       title: "Affinez par le Dialogue",
       description: "Le bot vous pose des questions pour préciser le Contexte et l'Audience. Répondez simplement dans le chat pour guider l'IA.",
-      code: "> Bot: Quelle est le style souhaité ?\n> Vous: Professionnel et engageant."
+      code: "> Bot: Quel est le style souhaité ?\n> Vous: Professionnel et engageant."
     },
     {
       number: "03",
@@ -21,14 +21,9 @@
   ];
 </script>
 
-<section class="py-24 relative bg-slate-900 overflow-hidden">
+<section id="steps" class="py-24 relative pointer-events-none">
   
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
-    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
-  </div>
-
-  <div class="max-w-6xl mx-auto px-6 relative z-10">
+  <div class="max-w-6xl mx-auto px-6 relative z-10 pointer-events-auto">
     
     <div class="text-center mb-20">
       <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
@@ -43,7 +38,7 @@
       <div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-blue-900 via-cyan-900 to-blue-900 z-0"></div>
 
       {#each steps as step}
-        <div class="relative flex flex-col items-center text-center group">
+        <div class="relative flex flex-col items-center text-center group bg-slate-900/40 backdrop-blur-sm rounded-2xl p-4 border border-white/5 hover:border-blue-500/30 transition-colors">
           
           <div class="w-24 h-24 rounded-full bg-slate-800 border-4 border-slate-900 flex items-center justify-center mb-6 relative z-10 shadow-xl group-hover:scale-110 transition-transform duration-300">
             <span class="text-2xl font-bold text-blue-400 font-mono">{step.number}</span>

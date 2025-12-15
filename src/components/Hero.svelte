@@ -3,20 +3,10 @@
     import { cubicOut } from 'svelte/easing';
 </script>
 
-<div class="relative z-10 flex flex-col items-center justify-center min-h-[100svh] px-4 text-center max-w-5xl mx-auto selection:bg-cyan-500 selection:text-white">
-
-    <div 
-        in:fly={{ y: -20, duration: 800, delay: 100, easing: cubicOut }}
-        class="mb-6"
-    >
-        <span class="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-blue-500/10 text-blue-300 border border-blue-500/20 rounded-full">
-            v1.0 Disponible
-        </span>
-    </div>
-
+<div id="hero" class="pointer-events-none relative z-10 flex flex-col items-center justify-center min-h-[100svh] px-4 text-center max-w-5xl mx-auto selection:bg-cyan-500 selection:text-white">
     <h1 
         in:fly={{ y: 20, duration: 800, delay: 200, easing: cubicOut }}
-        class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 drop-shadow-lg"
+        class="pointer-events-auto text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 drop-shadow-lg"
     >
       L'Architecte de <br />
       <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
@@ -26,14 +16,14 @@
 
     <p 
         in:fade={{ duration: 1000, delay: 400 }}
-        class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md"
+        class="pointer-events-auto text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md"
     >
       Fini la page blanche. Générez des prompts complexes, structurez vos idées et gardez une trace de vos créations.
     </p>
 
     <div 
         in:fly={{ y: 20, duration: 800, delay: 600, easing: cubicOut }}
-        class="flex flex-col sm:flex-row gap-4 justify-center items-center w-full"
+        class="flex flex-col sm:flex-row gap-4 justify-center items-center w-full pointer-events-auto"
     >
       
       <a 

@@ -1,5 +1,6 @@
-<footer class="bg-slate-950 border-t border-slate-900 py-12 relative z-10">
-  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<footer id="footer" class="bg-slate-950/80 backdrop-blur-md border-t border-slate-900 py-12 relative z-10 pointer-events-none">
+  
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 pointer-events-auto">
     
     <div class="text-center md:text-left">
       <h3 class="font-bold text-xl text-white mb-2">Architecte de Prompts</h3>
