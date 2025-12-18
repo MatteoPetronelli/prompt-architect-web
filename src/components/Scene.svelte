@@ -62,7 +62,7 @@
 
       if (isHeroMode) {
           const time = Date.now() * 0.001;
-          targetY += Math.sin(time + node.floatOffset) * 0.2; // Mouvement doux haut/bas
+          targetY += Math.sin(time + node.floatOffset) * 0.2;
       }
 
       node.x = MathUtils.lerp(node.x, targetX, speed);
